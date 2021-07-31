@@ -1,0 +1,8 @@
+{
+  "name": "pinksquare",
+  "template": "Default",
+  "isConfigured": {
+    "client": false,
+    "server": false
+  }
+}
