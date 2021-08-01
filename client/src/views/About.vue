@@ -19,6 +19,8 @@
 </template>
 <script>
   export default {
+    name: '',
+    props: [],
     data: function() {
       return{
         name: ''
@@ -28,7 +30,14 @@
       showAlert() {
         return this.name.length > 4 ? true : false
       }
-    }
+    },
+    watch: {
+
+    },
+    methods: {
+
+    },
+
   };
   
 </script>
