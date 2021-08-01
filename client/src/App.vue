@@ -1,32 +1,54 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" variant="light" type="light">
-      <b-navbar-brand href="#" class="mb-0">Pink Square Embroidery</b-navbar-brand>
+      <b-navbar-brand href="#" class="mb-0"
+        >Pink Square Embroidery</b-navbar-brand
+      >
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item>
-            <router-link class="nav-font-size text-decoration-none" to="/" exact>
+            <router-link
+              class="nav-font-size text-decoration-none"
+              to="/"
+              exact
+            >
               Home
             </router-link>
           </b-nav-item>
           <b-nav-item>
-            <router-link class="text-decoration-none nav-font-size" to="/gallery" exact>
+            <router-link
+              class="text-decoration-none nav-font-size"
+              to="/gallery"
+              exact
+            >
               Gallery
             </router-link>
           </b-nav-item>
           <b-nav-item>
-            <router-link class="text-decoration-none nav-font-size" to="/catalog" exact>
+            <router-link
+              class="text-decoration-none nav-font-size"
+              to="/catalog"
+              exact
+            >
               Catalog
             </router-link>
           </b-nav-item>
           <b-nav-item>
-            <router-link class="text-decoration-none nav-font-size" to="/about" exact>
+            <router-link
+              class="text-decoration-none nav-font-size"
+              to="/about"
+              exact
+            >
               About Us
             </router-link>
           </b-nav-item>
           <b-nav-item>
-            <router-link class="text-decoration-none nav-font-size" to="/contact" exact>
+            <router-link
+              class="text-decoration-none nav-font-size"
+              to="/contact"
+              exact
+            >
               Contact
             </router-link>
           </b-nav-item>
@@ -49,7 +71,7 @@
 }
 
 .bg-primary-pink {
-  background-color: #FCABC9;
+  background-color: #fcabc9;
 }
 
 #app {
@@ -58,7 +80,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #FCABC9;
+  background-color: #fcabc9;
 }
 #nav {
   padding: 30px;
@@ -73,5 +95,4 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-
 </style>

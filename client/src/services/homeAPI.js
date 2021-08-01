@@ -1,7 +1,7 @@
-import API from '@/services/api';
+import API from "@/services/api";
 
 export default {
-  getUsers () {
-    return API().get('');
+  getUsers() {
+    return API().get("");
   }
-}
+};

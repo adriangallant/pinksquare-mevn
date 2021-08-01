@@ -18,16 +18,13 @@ export default {
   components: {
     HelloWorld
   },
-  data: function(){
-    return{
-    }
+  data: function() {
+    return {};
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 <style scoped>
-
 .content {
   background: rgb(255, 255, 255);
   box-shadow: 0px 0px 4px 1px #b3b3b3;
@@ -39,5 +36,4 @@ export default {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
 </style>

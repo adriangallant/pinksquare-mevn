@@ -14,24 +14,15 @@
   </b-navbar>
 </template>
 <script>
-  export default {
-    name: 'navBar',
-    props: [],
-    data: function() {
-      return{
-       
-      }
-    },
-    mounted () {
-    },
-    computed: {
-      
-    },
-    watch: {
-
-    },
-    methods: {
-    },
-  };
-  
+export default {
+  name: "navBar",
+  props: [],
+  data: function() {
+    return {};
+  },
+  mounted() {},
+  computed: {},
+  watch: {},
+  methods: {}
+};
 </script>
