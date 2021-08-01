@@ -1,9 +1,9 @@
 <template>
   <b-container fluid>
-    <div class="content">
+    <div class="content pb-5">
       <div class="home">
-        <img alt="Vue logo" src="../assets/mevn.jpg" width="350" />
-        <HelloWorld msg="Default Boilerplate Template" />
+        <HelloWorld msg="Pink Square Embroidery LLC" />
+        <!--<img alt="Vue logo" src="../assets/mevn.jpg" width="350" />-->
       </div>
     </div>
   </b-container>
@@ -17,6 +17,12 @@ export default {
   name: "home",
   components: {
     HelloWorld
+  },
+  data: function(){
+    return{
+    }
+  },
+  methods: {
   }
 };
 </script>
