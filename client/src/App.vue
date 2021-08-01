@@ -56,15 +56,28 @@
       </b-collapse>
     </b-navbar>
     <router-view />
-    <footer class="container-fluid footer bg-white p-4">
-      <div class="row">
-        <div class="col text-center"><h1>This is a footer</h1></div>
-      </div>
+    <footer class="container-fluid footer footer-bg p-4">
+      <b-row>
+        <b-col cols="4">
+          <h3 class="fw-bold">Pink Square Embroidery</h3>
+        </b-col>
+        <b-col cols="3">
+          <p class="fw-bold">Get in Touch with Us for the Best Quality Custom Prints &amp; Embroideries.</p>
+        </b-col>
+        <b-col cols="5">
+
+        </b-col>
+      </b-row>
+      <hr>
     </footer>
   </div>
 </template>
 
 <style scoped lang="css">
+.footer-bg { 
+  background-color: #d3d3d3 ;
+}
+
 .nav-font-size {
   font-size: 1.2rem;
   color: black;
