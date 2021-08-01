@@ -11,12 +11,31 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      components: {
+        default: Home
+      }
     },
     {
       path: "/about",
       name: "about",
-      component: () => import("./views/About.vue")
-    }
+      components: {
+        default: () => import("./views/About.vue")
+      }
+    },
+    /*{
+      path: "/gallery",
+      name: "gallery",
+      component: () => import("")
+    },
+    {
+      path: "/catalog",
+      name: "gallery",
+      component: () => import("")
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () => import("")
+    },*/
   ]
 });

@@ -1,43 +1,39 @@
 <template>
   <b-container>
-    <b-jumbotron header="BootstrapVue" lead="Bootstrap v4 Components for Vue.js 2">
-      <p>For more information visit our website</p>
-      <b-btn variant="primary" href="https://bootstrap-vue.org/">More Info</b-btn>
-    </b-jumbotron>
-
-    <b-form-group
-      horizontal
-      :label-cols="4"
-      description="Let us know your name."
-      label="Enter your name"
-    >
-      <b-form-input v-model.trim="name"></b-form-input>
-    </b-form-group>
-
-    <b-alert variant="success" :show="showAlert">Hello {{ name }}</b-alert>
+    <div>
+      <ul>
+        <li :key="user._id" v-for="user in users">
+          <span>{{user.name}}</span>
+        </li>
+      </ul>
+    </div>
   </b-container>
 </template>
 <script>
+  import homeAPI from '@/services/homeAPI.js';
   export default {
-    name: '',
+    name: 'about',
     props: [],
     data: function() {
       return{
-        name: ''
+       users: [],
       }
     },
+    mounted () {
+      this.loadUsers();
+    },
     computed: {
-      showAlert() {
-        return this.name.length > 4 ? true : false
-      }
+      
     },
     watch: {
 
     },
     methods: {
-
+      async loadUsers () {
+        const response = await homeAPI.getUsers();
+        this.users = response.data;
+      }
     },
-
   };
   
 </script>
