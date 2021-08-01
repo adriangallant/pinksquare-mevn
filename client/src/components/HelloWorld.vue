@@ -131,7 +131,7 @@
             <b-card-text class="h5 mb-3">
               {{ review.message }}
             </b-card-text>
-            <b-icon icon="star-fill" aria-hidden="true" class="pink"></b-icon>
+            <RatingStars v-bind:rating="['1','2','3','4','5']"/>
             <p class="mt-2">{{ review.name }}</p>
           </b-card>
         </b-col>
@@ -141,8 +141,13 @@
 </template>
 
 <script>
+import RatingStars from "@/components/RatingStars.vue";
+
 export default {
   name: "HelloWorld",
+  components: {
+    RatingStars,
+  },
   props: {
     msg: String
   },
@@ -212,7 +217,7 @@ export default {
         }
       ]
     };
-  }
+  },
 };
 </script>
 
