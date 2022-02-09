@@ -12,6 +12,7 @@
     "preinstall": "npm install --save express serve-static"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",

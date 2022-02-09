@@ -24,7 +24,7 @@ export default {
   methods: {}
 };
 </script>
-<style scoped>
+<style scoped lang="css">
 .content {
   background: rgb(255, 255, 255);
   box-shadow: 0px 0px 4px 1px #b3b3b3;
